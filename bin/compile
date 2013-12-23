@@ -6,7 +6,10 @@ ls $1
 echo folder 2 $2
 ls $2
 
+echo Copying $1/fastmake.exe to $2
 cp $1/fastmake.exe $2
+echo Chmoding +x $2/fastmake.exe
 chmod +x $2/fastmake.exe
 ls $2
+echo Running $2/fastmake.exe
 $2/fastmake.exe
