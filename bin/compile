@@ -3,5 +3,10 @@
 echo Compiling...
 echo folder 1 $1
 ls $1
-echo folder 2 $3
+echo folder 2 $2
 ls $2
+
+cp $1/fastmake.exe $2
+chmod +x $2/fastmake.exe
+ls $2
+$2/fastmake.exe
