@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if test -n "$(find "$1" -maxdepth 1 -name 'lookhup.mak' -print -quit)" ; then
+    echo lookhup.mak detected
+    exit 0
+else
+    exit 1
+fi
